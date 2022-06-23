@@ -13,6 +13,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HealthCheckComponent } from './health-check/health-check.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WorldCitiesComponent } from './world-cities/world-cities.component';
+import { CitiesComponent } from './cities/cities.component';
+import { AngularMaterialModule } from './angular-material.module'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { WorldCitiesComponent } from './world-cities/world-cities.component';
     FetchDataComponent,
     NavMenuComponent,
     HealthCheckComponent,
-    WorldCitiesComponent
+    WorldCitiesComponent,
+    CitiesComponent,
+    AngularMaterialModule
   ],
   imports: [
     BrowserModule,
