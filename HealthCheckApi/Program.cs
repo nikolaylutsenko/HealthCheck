@@ -11,7 +11,11 @@ builder.Services.AddHealthChecks()
     .AddCheck("ICMP_02", new ICMPHealthCheck("www.google.com", 100))
     .AddCheck("ICMP_03", new ICMPHealthCheck($"10.0.0.0", 100));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()/*.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.WriteIndented = true;
+})*/;
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
