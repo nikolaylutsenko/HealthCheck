@@ -14,7 +14,8 @@ import { HealthCheckComponent } from './health-check/health-check.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WorldCitiesComponent } from './world-cities/world-cities.component';
 import { CitiesComponent } from './cities/cities.component';
-import { AngularMaterialModule } from './angular-material.module'
+import { AngularMaterialModule } from './angular-material.module';
+import { CountriesComponent } from './countries/countries.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { AngularMaterialModule } from './angular-material.module'
     HealthCheckComponent,
     WorldCitiesComponent,
     CitiesComponent,
-    AngularMaterialModule
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +35,8 @@ import { AngularMaterialModule } from './angular-material.module'
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
